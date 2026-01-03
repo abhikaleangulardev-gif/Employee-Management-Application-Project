@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLinkActive, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-employee-dashboard',
-  imports: [RouterOutlet],
+  imports: [CommonModule,RouterOutlet,RouterLink, RouterLinkActive],
   templateUrl: './employee-dashboard.html',
   styleUrl: './employee-dashboard.css',
 })
